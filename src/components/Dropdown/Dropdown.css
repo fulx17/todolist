@@ -1,0 +1,42 @@
+.dropdown {
+  position: relative;
+  width: 100px;
+  font-family: 'Dancing Script', cursive;
+  margin-left: auto;
+}
+
+.dropdown-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  cursor: pointer;
+  box-sizing: border-box;
+  font-family: 'Dancing Script', cursive;;
+}
+
+.dropdown-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border: 1px solid #aaa;
+  background: white;
+  max-height: 150px;
+  overflow-y: auto;
+  z-index: 1000;
+  border-radius: 4px;
+  font-size: 13px;
+  margin-top: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  font-family: 'Dancing Script', cursive;;
+}
+
+.dropdown-option {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.dropdown-option:hover {
+  background: #f0f0f0;
+}

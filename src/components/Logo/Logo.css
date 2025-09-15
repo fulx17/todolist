@@ -1,0 +1,29 @@
+.logo-img {
+  height: 30px;
+  width: auto;
+  cursor: pointer;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  gap: 5px;
+  border-radius: 5px;
+  width: fit-content; 
+  text-decoration: none;
+}
+
+.logo-container:hover {
+  background-color: #1C6EA4;
+
+}
+
+.logo-container p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 27px;
+  margin: 0px;
+  cursor: pointer;
+  color: white;
+}

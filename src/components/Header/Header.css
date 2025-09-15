@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  justify-content: space-between; /* logo trái, nav + buttons phải */
+  align-items: center;
+  width: 100%;
+  padding: 20px 50px;
+  background-color: #0d3b66;
+  color: white;
+  box-sizing: border-box;
+  box-shadow: 2px 4px 8px rgba(0,0,0,0.2);
+}
+
+.header-left {
+  flex: 1; 
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 100px; 
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+

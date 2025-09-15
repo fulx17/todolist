@@ -1,0 +1,12 @@
+.quote-store {
+    display: flex;
+    width: 700px;
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;      
+    font-family: 'Dancing Script', cursive;
+    font-weight: 1000;
+    font-size: 30px;
+    margin: 20px;
+    color: #333;
+}

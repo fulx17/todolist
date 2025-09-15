@@ -1,0 +1,88 @@
+.task-alert-store {
+  padding: 20px;
+}
+.task-alert {
+  max-width: 600px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+.task-alert h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+  color: #333;
+}
+
+.task-alert ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-alert li {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.task-alert li.upcoming {
+  background-color: #f0f8ff;
+}
+
+.task-alert li.overdue {
+  background-color: #ffe6e6;
+  color: #a00;
+  font-weight: bold;
+}
+
+.task-alert .task-title {
+  flex: 1;
+  word-break: break-word;
+  margin-right: 10px;
+}
+
+.task-alert .task-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.task-alert button {
+  width: 120px;
+  white-space: nowrap;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 5px 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.task-alert button:hover {
+  background-color: #0056b3;
+}
+
+.task-alert button.delete-btn {
+  width: 70px;
+  background-color: #dc3545;
+}
+
+.task-alert button.delete-btn:hover {
+  background-color: #a71d2a;
+}
+
+.task-alert p {
+  font-style: italic;
+  color: #555;
+}

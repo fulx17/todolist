@@ -1,0 +1,25 @@
+.daily-schedule-body {
+    display: flex;          
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center;      
+    padding: 20px;
+}
+.daily-schedule-body .calc {
+  width: 120px;
+  white-space: nowrap;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 5px 12px;
+  border: none;
+  border-radius: 4px;
+  background-color:  #33A1E0;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.daily-schedule-body .calc:hover {
+  background-color: #1C6EA4;
+}
