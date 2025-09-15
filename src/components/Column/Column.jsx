@@ -7,16 +7,15 @@ function Column({items, setItems, addTask, updateTask, deleteTask, moveToNextCol
     const [selectedItem, setSelectedItem] = useState(null);
     const [text, setText] = useState("");
     
-    const API_URL = process.env.REACT_APP_API_URL;
     const titleToTags = async (text) => {
-        const response = await fetch(`${API_URL}/predict`, {
+        const response = await fetch("/api/predict", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({task: text}),
+            body: JSON.stringify({ task: text }),
         });
         const data = await response.json();
         return data.prediction;
-    } 
+    };
 
 
     const [suggestions, setSuggestions] = useState([]); 
