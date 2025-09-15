@@ -8,13 +8,7 @@ function Column({items, setItems, addTask, updateTask, deleteTask, moveToNextCol
     const [text, setText] = useState("");
     
     const titleToTags = async (text) => {
-        const response = await fetch("/api/predict", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ task: text }),
-        });
-        const data = await response.json();
-        return data.prediction;
+        return "personal";
     };
 
 
